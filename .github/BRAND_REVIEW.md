@@ -34,3 +34,17 @@ This is a review branch. Merge/publication requires the owner's final approval. 
 ![Mobile homepage](review/home-mobile.jpg)
 
 ![Mobile booking landing and checked form](review/booking-mobile-review.jpg)
+
+## Warning-symbol follow-up — 5 November 2026
+
+Replaced the original rough inline drawings with recognisable local SVG pictograms: oil can/drop, thermometer over coolant, brake warning, engine outline, battery terminals, ABS, skidding car, seated passenger/airbag, particulate filter, tyre cross-section, car/key and service spanner. The symbols now have consistent size and clear dashboard panels. Battery/charging and SRS examples are red; the service example is amber. Actual manufacturer colours vary.
+
+The ABS/traction card shows both distinct symbols. Flashing and steady engine warnings use the same conventional outline, with a static “Flashing” label for the first example. There is no flashing animation. The page loads the maintained SVG files directly, replacing duplicated inline copies. Existing SVG URLs remain available, including the legacy flashing-engine asset. The guide's CSS reference is versioned so an earlier cached layout cannot break the expanded symbol panels.
+
+Most geometry comes from licensed Pictogrammers Material Design Icons; the generic DPF pictogram is an original filter/dots/exhaust drawing. Provenance, pinned upstream source, modifications and Apache licence are recorded in [the artwork notes](../assets/warning-lights/README.md). No manufacturer images or icon-font dependencies are shipped.
+
+Verified all 13 symbol images across the 12 cards at 320, 390, 768 and 1440px; all loaded with no page/card overflow. Red and amber artwork contrast against charcoal is 5.12:1 and 10.21:1 respectively. All 12 card headings, advice, status text, action links and SEO metadata were preserved. The booking page and its embed were untouched by this follow-up. Symbols and colours are examples; the page directs drivers to their owner's manual and dashboard messages.
+
+![Updated warning symbols](review/warning-symbols-updated.jpg)
+
+![Warning card on mobile](review/warning-guide-mobile-updated.jpg)

@@ -619,30 +619,58 @@ section {
 }
 .warning-top {
   display:flex;
-  align-items:center;
-  gap:16px
+  flex-direction:column;
+  align-items:stretch;
+  gap:20px
 }
+.warning-top > div {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px
+}
+.warning-top h3 { margin:0 }
 .dash-symbol {
-  width:76px;
-  height:76px;
-  border-radius:8px;
+  position:relative;
+  width:100%;
+  min-height:112px;
+  border-radius:4px;
   display:flex;
   align-items:center;
   justify-content:center;
+  gap:32px;
   flex:0 0 auto;
-  background:#161616
+  background:#242422
 }
-.dash-symbol img,.dash-symbol .warning-svg {
-  width:64px;
-  height:64px;
+.dash-symbol img {
+  width:72px;
+  height:72px;
   display:block;
   object-fit:contain
 }
-.urgent .dash-symbol {
-  color:#ff4d45
+.symbol-example {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3px;
+  padding:10px 0;
+  font-size:10px;
+  line-height:1.4;
+  color:var(--ivory)
 }
-.warning .dash-symbol,.book .dash-symbol {
-  color:#ffbf00
+.symbol-example img { width:56px; height:56px }
+.symbol-mode {
+  position:absolute;
+  top:10px;
+  right:10px;
+  border:1px solid #ffca45;
+  padding:3px 6px;
+  color:#ffca45;
+  font-size:9px;
+  line-height:1.4;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase
 }
 .status {
   display:inline-block;
@@ -917,9 +945,6 @@ section {
   }
   .booking-help {
     padding:14px 16px
-  }
-  .warning-top {
-    align-items:flex-start
   }
   .warning-card {
     padding:20px
