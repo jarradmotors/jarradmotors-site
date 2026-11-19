@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;Jarrad Motors Casterton;;;
+FN:Jarrad Motors Casterton
+ORG:Jarrad Motors Casterton
+TEL;TYPE=WORK,VOICE:+61355811142
+EMAIL;TYPE=WORK:office@jarradmotors.com.au
+URL:https://jarradmotors.com.au/
+ADR;TYPE=WORK:;;239 Old Mt Gambier Road;Casterton;VIC;3311;Australia
+NOTE:Workshop hours: Monday-Friday 8:30am-5pm.
+END:VCARD
